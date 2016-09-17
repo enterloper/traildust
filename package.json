@@ -1,0 +1,48 @@
+{
+  "name": "weeknightdangerous",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weeknightdangerous/weeknightdangerous.git"
+  },
+  "author": "weeknightdangerous",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weeknightdangerous/weeknightdangerous/issues"
+  },
+  "homepage": "https://github.com/weeknightdangerous/weeknightdangerous#readme",
+  "dependencies": {
+    "axios": "^0.9.1",
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "html-entities": "^1.2.0",
+    "instagram-node": "^0.5.8",
+    "jade": "^1.11.0",
+    "knex": "^0.10.0",
+    "path": "^0.12.7",
+    "pg": "^4.5.2",
+    "pug": "^2.0.0-beta6",
+    "striptags": "^2.1.1",
+    "uuid": "^2.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.4",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-sass": "^2.2.0",
+    "gulp-shell": "^0.5.2",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.1"
+  }
+}

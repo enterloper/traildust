@@ -1,0 +1,41 @@
+<div class="container">
+  <div ng-show="myFav.loader" class="loader-wrapper">
+    <h2 class="text-center">Searching</h2>
+    <div ng-show="myFav.loader" class="loader"></div>
+  </div>
+  <div class="myFavContainer">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="trails">
+        <!-- no favorite trail message -->
+        <div ng-if="myFav.noFav" class="trail">
+          <h3>Oops, you have not added any trail yet. Please add some first</h3>
+          <button ui-sref="home" class="btn btn-primary btn-lg btn-block">Go Back</button>
+        </div>
+        <div ng-repeat="trail in myFav.data | orderBy: '-rating'" class="trail" >
+          <div class="row">
+            <div class="col-md-2">
+              <img class="img-responsive" src={{trail.thumbnail}}></img>
+            </div>
+            <div class="col-md-7">
+              <h3>{{trail.name}}</h3>
+              <div class="trailsStars">
+                <span ng-repeat="rating in ratings">
+                  <div star-rating rating-value=trail.rating max="rating.max" ></div>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              
+              <button
+                class="btn btn-primary btn-lg btn-block"
+                ng-click="myFav.getTrail(trail)">
+                More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

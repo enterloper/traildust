@@ -1,2 +1,2 @@
-# traildust
-Trail finding applica
+# weeknightdangerous
+http://trailrpark.herokuapp.com/
